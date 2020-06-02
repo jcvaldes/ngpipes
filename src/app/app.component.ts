@@ -9,7 +9,7 @@ export class AppComponent {
 
     nombre    : string   = 'Capitán América';
     nombre2   : string   = 'JuaN CArlos ValdÉs';
-    titulo    : string   = 'un titulo';
+    titulo    : string   = 'uN titulo';
     personajes: string[] = ['Ironman', 'Spiderman', 'Thor','Loki','Groot'];
     PI        : number   = Math.PI;
     porcentaje: number   = 0.235;
@@ -19,14 +19,12 @@ export class AppComponent {
     activar   : boolean  = true;
 
     idioma    : string = 'en';
-    videoUrl  : string = 'https://www.youtube.com/embed/lWA2pjMjpBs';
+    videoUrl  : string = 'https://www.youtube.com/embed/jWJmTpafZ9M';
 
-    valorPromesa = new Promise<string>( (resolve) => {
-
+    valorPromesa = new Promise<string>( (resolve, reject) => {
       setTimeout(() => {
         resolve('llego la data');
       }, 4500);
-
     });
 
     heroe = {
